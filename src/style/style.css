@@ -20,9 +20,44 @@ p{
 	font-size: 14px;
 }
 
+.theme-bg {
+	background-color: #09434d;
+}
+.theme-color{
+	color: orange;
+}
+.box-btn {
+	background-color: orange;
+	color: white;
+	text-decoration: none;
+	padding: 8px 24px;
+	display: inline-block;
+	border-radius: 6px;
+	font-size: 14px;
+	transition: 0.5s;
+}
+.box-btn:hover {
+	background-color: white;
+	color: black;
+	text-decoration: none;
+}
+.border-btn {
+	border: 2px solid white;
+	color: white;
+	text-decoration: none;
+	padding: 8px 24px;
+	display: inline-block;
+	border-radius: 6px;
+	font-size: 14px;
+	transition: 0.5s;
+}
+.border-btn:hover {
+	border-color: orange;
+	color: white;
+	text-decoration: none;
+}
 
 /*HEADER SECTION STARTED*/
-
 .header-area {
 	position: fixed;
 	z-index: 99999;
@@ -35,11 +70,12 @@ p{
 .header-area button {
 	display: none;
 }
-.header{}
+
 .logo {
 	float: left;
 	width: 250px;
 }
+
 .logo a {
 	text-decoration: none;
 	font-size: 36px;
@@ -111,8 +147,73 @@ p{
 	transform: rotateX(0deg);
 }
 
-/*PRELOADER CSS*/
+/* Home Banner */
 
+.banner-area {
+	background-color:#343a40;
+	min-height: 100vh;
+}
+.banner {
+	color: white;
+}
+::i-block-chrome,.banner {
+	min-height: 665px;
+}
+::i-block-chrome,.banner-left {
+	padding: 200px 0;
+}
+.banner-left h4 {
+	font-weight: 700;
+}
+.banner-left a {
+	margin-right: 4px;
+	margin-top: 30px;
+}
+.banner-right {
+	border-radius: 75% 0 0 75%;
+	background-color: white;
+	margin-right: -15px;
+	overflow: hidden;
+	position: relative;
+}
+.banner-right img {
+	width: 80%;
+	float: right;
+	padding-right: 100px;
+	padding-top: 80px;
+}
+.banner-contact-link {
+	height: 200px;
+	position: absolute;
+	content: "";
+	bottom: 0;
+	right: 0;
+}
+.banner-contact-link a {
+	color: none !important;
+	text-decoration: none;
+}
+.banner-contact-link a i {
+	display: block;
+	padding: 18px 0;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	background-color: white;
+	color: black;
+	border-radius: 50px;
+	box-shadow: 0px 0px 10px #0000009c;
+	text-rendering: optimizeLegibility;
+}
+.banner-contact-link a:hover i {
+	background-color: orange;
+	color: white !important;
+	transform: rotate(360deg);
+	transition: 0.5s;
+}
+
+/*PRELOADER CSS*/
 .preloader {
 	position: fixed;
 	background-color: white;
@@ -169,6 +270,15 @@ p{
 }
 .preloader ul li:nth-child(5){
 	animation-delay:.5s;
+}
+
+
+/* Footer */
+::i-block-chrome,.footer {
+	min-height: 50px;
+}
+.footer p {
+	padding: 15px 0;
 }
 
 /* Scroll Top */
