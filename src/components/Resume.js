@@ -7,7 +7,7 @@ function Resume(){
     return (
         <div>
             <Header/>
-                <p>This is Resume page</p>
+                <p>This is Resume page need to update</p>
             <Footer/>
         </div>
     )
