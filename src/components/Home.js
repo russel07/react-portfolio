@@ -30,7 +30,7 @@ function Home(){
                                 </Typed></h1>
 
                                 <p>An expert web developer with 7+ years of experience.</p>
-                                <a href="/hire-me" className="btn border-btn">Hire me</a>
+                                <a href="https://fiverr.com/mdrusselhussain" className="btn border-btn">Hire me</a>
                                 <a href={resume} className="btn box-btn" download>Get Resume</a>
                             </div>
                         </div>

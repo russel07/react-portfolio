@@ -57,6 +57,38 @@ p{
 	text-decoration: none;
 }
 
+.common-header{
+	text-align: center;
+	position: relative;
+	padding-bottom: 15px;
+}
+.common-header::after {
+	position: absolute;
+	content: "";
+	width: 200px;
+	height: 2px;
+	background-color: black;
+	bottom: 0;
+	left: 50%;
+	margin-left: -100px;
+}
+.common-header::before {
+	position: absolute;
+	content: "";
+	width: 40px;
+	height: 8px;
+	background-color: orange;
+	bottom: -4px;
+	left: 50%;
+	margin-left: -20px;
+	z-index: 1;
+	border-radius: 6px;
+}
+.common-header h3 {
+	font-weight: 700;
+}
+.common-header p{}
+
 /*HEADER SECTION STARTED*/
 .header-area {
 	position: fixed;
@@ -211,6 +243,52 @@ p{
 	color: white !important;
 	transform: rotate(360deg);
 	transition: 0.5s;
+}
+
+/*About Page*/
+.about-area{
+	background-color: white;
+	min-height: 100vh;
+	padding-top: 30px;
+}
+::i-block-chrome,.about {
+	min-height: 700px;
+}
+.about-content {
+	box-shadow: 0px 0px 15px #0000007d;
+	height: 470px;
+	border-radius: 15px;
+	overflow: hidden;
+}
+.about-left {
+	height: 100%;
+	overflow: hidden;
+}
+.about-left img {
+	width: 100%;
+}
+.about-right {
+	padding: 30px 15px;
+}
+.about-right ul{
+	margin: 50px 0;
+	list-style: none;
+}
+.about-right li {
+	font-size: 14px;
+	padding: 3px 0;
+}
+.about-right li i {
+	color: orange;
+	margin-right: 10px;
+}
+
+.about-right .border-btn {
+	background-color: black;
+}
+.about-right .border-btn:hover {
+	color: orange;
+	border: none;
 }
 
 /*PRELOADER CSS*/
